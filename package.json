@@ -1,0 +1,23 @@
+{
+  "name": "polessu_bot",
+  "version": "1.0.0",
+  "description": "A bot for easy viewing of the schedule and notifications about lessons.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "npm run build && node dist/test",
+    "build": "tsc",
+    "start": "node dist/index",
+    "compileAndStart": "npm run build && npm start"
+  },
+  "author": "Fatonn Developer (Daniel Krischik)",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-html-parser": "^5.4.2",
+    "telegraf": "^4.9.1"
+  }
+}
